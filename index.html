@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Player Gate - بوابة اللاعب، منصة سعودية متخصصة في اكتشاف وتطوير وربط لاعبي كرة القدم بالفرص الحقيقية محلياً وعالمياً." />
+  <meta name="keywords" content="player gate, بوابة اللاعب, كرة القدم, احتراف, لاعبين, أندية, أكاديميات" />
+  <meta property="og:title" content="Player Gate - بوابة اللاعب" />
+  <meta property="og:description" content="منصة سعودية تربط اللاعبين بالفرص الحقيقية محلياً وعالمياً" />
+  <title>Player Gate | بوابة اللاعب</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="lang-ar theme-green">
+
+  
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="images/logo.png" alt="Player Gate Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+      <li><a href="#services" data-i18n="nav_services">الخدمات</a></li>
+      <li><a href="#how" data-i18n="nav_how">كيف نعمل</a></li>
+      <li><a href="#why" data-i18n="nav_why">لماذا نحن</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">انضم الآن</a></li>
+    </ul>
+    <div class="nav-right">
+       <div class="theme-switcher" aria-label="Color theme switcher">
+        <button type="button" class="theme-btn theme-green-btn active" aria-label="Green theme"></button>
+        <button type="button" class="theme-btn theme-blue-btn" aria-label="Blue theme"></button>
+        <button type="button" class="theme-btn theme-red-btn" aria-label="Red theme"></button>
+      </div>
+
+      <button class="lang-toggle" onclick="toggleLang( )" data-i18n="lang_switch">EN</button>
+      <a href="#contact" class="btn btn-gold" data-i18n="nav_join">انضم الآن</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose"><i class="fa fa-times"></i></button>
+  <a href="#hero" data-i18n="nav_home">الرئيسية</a>
+  <a href="#about" data-i18n="nav_about">من نحن</a>
+  <a href="#services" data-i18n="nav_services">الخدمات</a>
+  <a href="#how" data-i18n="nav_how">كيف نعمل</a>
+  <a href="#why" data-i18n="nav_why">لماذا نحن</a>
+  <a href="#contact" data-i18n="nav_contact">انضم الآن</a>
+  <button class="lang-toggle" onclick="toggleLang()" data-i18n="lang_switch">EN</button>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-visual">
+    <div class="hero-circle"></div>
+    <div class="hero-circle hero-circle-2"></div>
+    <img src="images/logo.png" alt="" class="hero-logo-big" />
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-sub-line" data-i18n="hero_title_a">المواهب لا تُصنع، بل</span>
+        <span class="white-text" data-i18n="hero_title_b">تُكتشف، تُصقل،</span>  
+
+        <span class="gold-text" data-i18n="hero_title_c">وتُقدَّم للعالم.</span>
+      </h1>
+
+      <p class="hero-desc" data-i18n="hero_desc">في بوابة اللاعب نفتح لك الأبواب التي تحتاجها لتصل، من أول خطوة إلى الاحتراف.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-outline" data-i18n="hero_btn2">ابدأ رحلتك</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <div class="stat-number counter" data-i18n="stat1_num">محلياً</div>
+        <div class="stat-label" data-i18n="stat1_label">فرص حقيقية</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-number counter" data-i18n="stat2_num">عالمياً</div>
+        <div class="stat-label" data-i18n="stat2_label">أكاديميات ومعسكرات</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-number counter" data-i18n="stat3_num">معتمدين</div>
+        <div class="stat-label" data-i18n="stat3_label">كشافين ووكلاء</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-number counter" data-i18n="stat4_num">مستمر</div>
+        <div class="stat-label" data-i18n="stat4_label">دعم وتطوير</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title" data-i18n="about_title">من نحن</h2>
+        <div class="gold-line"></div>
+        <p class="about-desc" data-i18n="about_desc1">بوابة اللاعب هي منصة سعودية متخصصة في اكتشاف وتطوير وربط لاعبي كرة القدم بالفرص الحقيقية محلياً وعالمياً.</p>
+        <p class="about-desc" data-i18n="about_desc2">نعمل كحلقة وصل بين اللاعب وكل ما يحتاجه للنجاح: أكاديميات ومعسكرات عالمية، مدربين متخصصين، كشافين ووكلاء معتمدين، وفرص احتراف وشراكات.</p>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-card-main">
+          <div class="vision-mission">
+            <div class="vm-item">
+              <div>
+                <div class="vm-title" data-i18n="vision_title">أكاديميات ومعسكرات عالمية</div>
+                <div class="vm-text" data-i18n="vision_text">نفتح للاعب الطريق للوصول إلى بيئات تدريب وتطوير عالمية تناسب مرحلته وطموحه.</div>
+              </div>
+            </div>
+            <div class="vm-item">
+              <div>
+                <div class="vm-title" data-i18n="mission_title">مدربين وكشافين ووكلاء</div>
+                <div class="vm-text" data-i18n="mission_text">نربط اللاعب بمدربين متخصصين وكشافين ووكلاء معتمدين لتوسيع فرصه الرياضية.</div>
+              </div>
+            </div>
+            <div class="vm-item">
+              <div>
+                <div class="vm-title" data-i18n="believe_title">مهمتنا</div>
+                <div class="vm-text" data-i18n="believe_text">ربط اللاعب بالفرص الحقيقية وتسهيل طريقه الرياضي للاحتراف.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title reveal" data-i18n="services_title">خدماتنا</h2>
+    <div class="gold-line reveal"></div>
+    <p class="section-subtitle reveal" data-i18n="services_sub">نقدم خدمات متخصصة للاعبين المحترفين والهواة لفتح آفاق جديدة نحو الاحتراف</p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">📋</div>
+        <div class="service-title" data-i18n="s1_title">إدارة وتطوير الملف الاحترافي</div>
+        <div class="service-desc" data-i18n="s1_desc">نساعد اللاعبين المحترفين والهواة في إنشاء وإدارة ملف لاعب احترافي يعكس المستوى الحقيقي ويدعم فرص الوصول للأندية والأكاديميات.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🤝</div>
+        <div class="service-title" data-i18n="s2_title">تسويق اللاعب وربطه بالفرص</div>
+        <div class="service-desc" data-i18n="s2_desc">نربط اللاعبين بفرص الرعاية والإعلانات، وتجارب الأداء، والأندية، والأكاديميات، والكشافين والوكلاء المعتمدين.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">✈️</div>
+        <div class="service-title" data-i18n="s3_title">معسكرات خارجية وعالمية</div>
+        <div class="service-desc" data-i18n="s3_desc">نوفر الوصول إلى أفضل المعسكرات العالمية الفردية والجماعية، ومعسكرات خارجية في أفضل الأكاديميات العالمية.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">👔</div>
+        <div class="service-title" data-i18n="s4_title">مدربين ووكلاء وكشافين</div>
+        <div class="service-desc" data-i18n="s4_desc">نفتح لك أبواب الوصول إلى مدربين خاصين متخصصين، ووكلاء وكشافين معتمدين لدعم مسيرتك الرياضية.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🗺️</div>
+        <div class="service-title" data-i18n="s5_title">تحليل وتطوير فردي</div>
+        <div class="service-desc" data-i18n="s5_desc">نقدم تحليل أداء بالفيديو، وخطط تطوير فردية حسب مستوى اللاعب، ودعم نفسي وذهني وتطوير ذاتي.</div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">🌐</div>
+        <div class="service-title" data-i18n="s6_title">مزايا وشراكات حصرية</div>
+        <div class="service-desc" data-i18n="s6_desc">نوفر مراكز تأهيل وعلاج طبيعي داخل وخارج المملكة، واستشارات مالية وإدارية، وخصومات ومزايا حصرية مع شركائنا.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2 class="section-title reveal" data-i18n="how_title">كيف نعمل</h2>
+    <div class="gold-line reveal"></div>
+    <p class="section-subtitle reveal" data-i18n="how_sub">نقدم باقات مرنة تناسب كل لاعب حسب مرحلته</p>
+    <div class="steps-container reveal">
+      <div class="steps-line"><div class="steps-line-fill"></div></div>
+      <div class="step-item"><div class="step-num">1</div><div><div class="step-title" data-i18n="step1_title">الباقة الأساسية – 200 ريال / سنوياً</div><div class="step-desc" data-i18n="step1_desc">إنشاء ملف لاعب أساسي، الوصول للفرص العامة، خصومات من شركائنا، ومحتوى تعليمي وتطويري.</div></div></div>
+      <div class="step-item"><div class="step-num">2</div><div><div class="step-title" data-i18n="step2_title">الباقة المتقدمة – 500 ريال / سنوياً</div><div class="step-desc" data-i18n="step2_desc">كل ما في الباقة الأساسية، تسويق اللاعب للأندية، الوصول لمدربين ووكلاء، أولوية في المعسكرات، واستشارات تطوير.</div></div></div>
+      <div class="step-item"><div class="step-num">3</div><div><div class="step-title" data-i18n="step3_title">الباقة الاحترافية – 1000 ريال / سنوياً</div><div class="step-desc" data-i18n="step3_desc">إدارة متقدمة لملف اللاعب، فرص تجارب أداء داخل وخارج السعودية، تحليل أداء احترافي + فيديو، دعم بناء الهوية الشخصية، وربط مباشر مع كشافين ووكلاء.</div></div></div>
+      <div class="step-item"><div class="step-num">4</div><div><div class="step-title" data-i18n="step4_title">أولوية قصوى في الفرص</div><div class="step-desc" data-i18n="step4_desc">يحصل اللاعب في الباقة الاحترافية على أولوية قصوى في جميع الفرص المتاحة.</div></div></div>
+      <div class="step-item"><div class="step-num">5</div><div><div class="step-title" data-i18n="step5_title">مزايا حصرية VIP</div><div class="step-desc" data-i18n="step5_desc">مزايا وخدمات حصرية مع شركائنا لدعم اللاعب في رحلته نحو الاحتراف.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <h2 class="section-title reveal" data-i18n="why_title">لماذا بوابة اللاعب؟</h2>
+    <div class="gold-line reveal"></div>
+    <p class="section-subtitle reveal" data-i18n="why_sub">فرص حقيقية وليست وعود، ودعم مستمر لتطوير اللاعب</p>
+    <div class="why-grid">
+      <div class="why-item reveal"><div><div class="why-title" data-i18n="w1_title">شبكة علاقات قوية محلياً وعالمياً</div><div class="why-desc" data-i18n="w1_desc">نمتلك شبكة علاقات تساعد اللاعب على الوصول إلى فرص حقيقية داخل المملكة وخارجها.</div></div></div>
+      <div class="why-item reveal reveal-delay-1"><div><div class="why-title" data-i18n="w2_title">فهم عميق لسوق كرة القدم</div><div class="why-desc" data-i18n="w2_desc">نفهم متطلبات سوق كرة القدم ونساعد اللاعب على اتخاذ خطوات واضحة ومناسبة.</div></div></div>
+      <div class="why-item reveal reveal-delay-1"><div><div class="why-title" data-i18n="w3_title">منصة تجمع كل ما يحتاجه اللاعب</div><div class="why-desc" data-i18n="w3_desc">نجمع الخدمات والفرص والدعم في مكان واحد لتسهيل طريق اللاعب نحو الاحتراف.</div></div></div>
+      <div class="why-item reveal reveal-delay-2"><div><div class="why-title" data-i18n="w4_title">فرص حقيقية وليست وعود</div><div class="why-desc" data-i18n="w4_desc">نركز على ربط اللاعب بفرص عملية وحقيقية تساعده في بناء مسيرته الرياضية.</div></div></div>
+      <div class="why-item reveal reveal-delay-2"><div><div class="why-title" data-i18n="w5_title">دعم مستمر لتطوير اللاعب</div><div class="why-desc" data-i18n="w5_desc">نرافق اللاعب في مراحل تطوره ونساعده على تحسين مستواه وبناء مسار واضح.</div></div></div>
+      <div class="why-item reveal reveal-delay-3"><div><div class="why-title" data-i18n="w6_title">طريق واضح نحو الاحتراف</div><div class="why-desc" data-i18n="w6_desc">نفتح لك الأبواب التي تحتاجها لتصل من أول خطوة إلى الاحتراف.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title" data-i18n="cta_title">رحلتك تبدأ بقرار — خذ الخطوة اليوم</h2>
+      <p class="cta-desc" data-i18n="cta_desc">انضم الآن إلى بوابة اللاعب وابدأ رحلتك نحو الفرص الحقيقية والاحتراف</p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn btn-gold"><i class="fa fa-user-plus"></i><span data-i18n="cta_btn1">انضم الآن</span></a>
+        <a href="#contact" class="btn btn-outline" data-i18n="cta_btn2">ابدأ رحلتك</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title reveal" data-i18n="contact_title">انضم الآن</h2>
+    <div class="gold-line reveal"></div>
+    <p class="section-subtitle reveal" data-i18n="contact_sub">رحلتك تبدأ بقرار — خذ الخطوة اليوم</p>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3 data-i18n="contact_info_title">ابدأ رحلتك مع بوابة اللاعب</h3>
+        <p data-i18n="contact_info_desc">نفتح لك الأبواب التي تحتاجها لتصل، من أول خطوة إلى الاحتراف.</p>
+        <div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-envelope"></i></div><span data-i18n="contact_email">info@playergate.com</span></div>
+        <div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-phone"></i></div><span data-i18n="contact_phone">+966 5X XXX XXXX</span></div>
+        <div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-map-marker-alt"></i></div><span data-i18n="contact_location">المملكة العربية السعودية</span></div>
+        <!--div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div-->
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="form_name">الاسم الكامل</label><input type="text" data-i18n="form_name_ph" placeholder="أدخل اسمك الكامل" required /></div>
+            <div class="form-group"><label data-i18n="form_phone">رقم الجوال</label><input type="tel" data-i18n="form_phone_ph" placeholder="05XXXXXXXX" required /></div>
+          </div>
+          <div class="form-group"><label data-i18n="form_email">البريد الإلكتروني</label><input type="email" data-i18n="form_email_ph" placeholder="example@email.com" required /></div>
+          <div class="form-group"><label data-i18n="form_message">رسالتك</label><textarea data-i18n="form_message_ph" placeholder="اكتب رسالتك هنا..." required></textarea></div>
+          <button type="submit" class="btn btn-gold form-submit"><i class="fa fa-paper-plane"></i><span data-i18n="form_submit">إرسال الرسالة</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2025 <span data-i18n="footer_brand">Player Gate</span>. <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></span>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
