@@ -848,8 +848,8 @@ body.lang-en .why-item:hover { transform: translateX(4px); box-shadow: -4px 0 20
   width: 100%;
   background: rgba(var(--gold-rgb), 0.05);
   border: 1px solid rgba(var(--gold-rgb), 0.15);
-  border-radius: 10px;
-  padding: 13px 16px;
+  border-radius: 9px;
+  padding: 13px 4px;
   color: var(--white);
   font-size: 0.95rem;
   font-family: inherit;
