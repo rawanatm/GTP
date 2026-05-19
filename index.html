@@ -28,12 +28,12 @@
       <li><a href="#why" data-i18n="nav_why">لماذا نحن</a></li>
       <li><a href="#contact" data-i18n="nav_contact">انضم الآن</a></li>
     </ul>
-    <div class="nav-right">
+    <!--div class="nav-right">
        <div class="theme-switcher" aria-label="Color theme switcher">
         <button type="button" class="theme-btn theme-green-btn active" aria-label="Green theme"></button>
         <button type="button" class="theme-btn theme-blue-btn" aria-label="Blue theme"></button>
         <button type="button" class="theme-btn theme-red-btn" aria-label="Red theme"></button>
-      </div>
+      </div-->
 
       <button class="lang-toggle" onclick="toggleLang( )" data-i18n="lang_switch">EN</button>
       <a href="#contact" class="btn btn-gold" data-i18n="nav_join">انضم الآن</a>
@@ -192,7 +192,8 @@
       <div class="step-item"><div class="step-num">2</div><div><div class="step-title" data-i18n="step2_title">الباقة الأساسية – 200 ريال / سنوياً</div><div class="step-desc" data-i18n="step2_desc">إنشاء ملف لاعب أساسي، الوصول للفرص العامة، خصومات من شركائنا، ومحتوى تعليمي وتطويري.</div></div></div>
       <div class="step-item"><div class="step-num">3</div><div><div class="step-title" data-i18n="step3_title">الباقة المتقدمة – 500 ريال / سنوياً</div><div class="step-desc" data-i18n="step3_desc">كل ما في الباقة الأساسية، تسويق اللاعب للأندية، الوصول لمدربين ووكلاء، أولوية في المعسكرات، واستشارات تطوير.</div></div></div>
       <div class="step-item"><div class="step-num">4</div><div><div class="step-title" data-i18n="step4_title">الباقة الاحترافية – 1000 ريال / سنوياً</div><div class="step-desc" data-i18n="step4_desc">إدارة متقدمة لملف اللاعب، فرص تجارب أداء داخل وخارج السعودية، تحليل أداء احترافي + فيديو، دعم بناء الهوية الشخصية، وربط مباشر مع كشافين ووكلاء.</div></div></div>
-      
+      <!--div class="step-item"><div class="step-num">4</div><div><div class="step-title" data-i18n="step4_title">أولوية قصوى في الفرص</div><div class="step-desc" data-i18n="step4_desc">يحصل اللاعب في الباقة الاحترافية على أولوية قصوى في جميع الفرص المتاحة.</div></div></div>
+      <!div class="step-item"><div class="step-num">5</div><div><div class="step-title" data-i18n="step5_title">مزايا حصرية VIP</div><div class="step-desc" data-i18n="step5_desc">مزايا وخدمات حصرية مع شركائنا لدعم اللاعب في رحلته نحو الاحتراف.</div></div></div-->
     </div>
   </div>
 </section>
@@ -212,6 +213,30 @@
     </div>
   </div>
 </section>
+
+
+
+
+<section id="partners" style="display:none;">
+  <div class="container">
+    <h2 class="section-title reveal" data-i18n="partners_title">شركاؤنا</h2>
+    <div class="gold-line reveal"></div>
+    <p class="section-subtitle reveal" data-i18n="partners_sub">نفخر بشراكاتنا مع أبرز الجهات محلياً وعالمياً</p>
+    <div class="partners-grid">
+ 
+      <!-- نموذج بطاقة شريك — انسخ وعدّل
+      <div class="partner-card reveal">
+        <img class="partner-logo" src="images/partners/LOGO.png" alt="اسم الشريك" />
+        <div class="partner-name">اسم الشريك</div>
+        <div class="partner-type">نوع الشراكة</div>
+      </div>
+      -->
+ 
+    </div>
+  </div>
+</section>
+
+
 
 <section id="cta">
   <div class="container">
@@ -236,19 +261,15 @@
         <h3 data-i18n="contact_info_title">ابدأ رحلتك مع بوابة اللاعب</h3>
         <p data-i18n="contact_info_desc">نفتح لك الأبواب التي تحتاجها لتصل، من أول خطوة إلى الاحتراف.</p>
         <div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-envelope"></i></div><span data-i18n="contact_email">info@playergate.com</span></div>
-        <div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-phone"></i></div><span data-i18n="contact_phone">+966 5X XXX XXXX</span></div>
+        <!--div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-phone"></i></div><span data-i18n="contact_phone">+966 5X XXX XXXX</span></div-->
         <div class="contact-detail"><div class="contact-detail-icon"><i class="fa fa-map-marker-alt"></i></div><span data-i18n="contact_location">المملكة العربية السعودية</span></div>
-        <!--div class="social-links">
-          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div-->
+       
       </div>
       <div class="contact-form reveal reveal-delay-2">
         <form id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group"><label data-i18n="form_name">الاسم الكامل</label><input type="text" data-i18n="form_name_ph" placeholder="أدخل اسمك الكامل" required /></div>
+          
             <div class="form-group"><label data-i18n="form_phone">رقم الجوال</label><input type="tel" data-i18n="form_phone_ph" placeholder="05XXXXXXXX" required /></div>
           </div>
           <div class="form-group"><label data-i18n="form_email">البريد الإلكتروني</label><input type="email" data-i18n="form_email_ph" placeholder="example@email.com" required /></div>
@@ -263,13 +284,13 @@
 <footer>
   <div class="container">
     <div class="footer-bottom">
-      <span>© 2025 <span data-i18n="footer_brand">Player Gate</span>. <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></span>
-      <div class="social-links">
+      <span>© 2026 <span data-i18n="footer_brand">Player Gate</span>. <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></span>
+      <!--div class="social-links">
         <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
         <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+      </div-->
     </div>
   </div>
 </footer>
