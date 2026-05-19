@@ -4,62 +4,8 @@
    ===================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Montserrat:wght@300;400;600;700;900&display=swap');
+
 :root {
-  --gold:       #22c55e;
-  --gold-light: #4ade80;
-  --gold-dark:  #16a34a;
-
-  --black:   #06110b;
-  --black-2: #0b1f14;
-  --black-3: #12301f;
-
-  --white:      #f1f5f9;
-  --gray:       #94a3b8;
-  --gray-light: #475569;
-
-  /* rgba helpers مبنية على المتغيرات */
-  --gold-rgb:  34, 197, 94;
-  --black-rgb: 15, 23, 42;
-
-  --transition:   all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow-gold:  0 14px 35px rgba(var(--gold-rgb), 0.18);
-  --radius:       12px;
-
-  --logo-filter: brightness(0) saturate(100%) invert(58%) sepia(69%) saturate(450%) hue-rotate(95deg) brightness(105%);
-  --logo-filter-hover: brightness(0) saturate(100%) invert(72%) sepia(60%) saturate(400%) hue-rotate(95deg) brightness(115%);
-}
-/* =====================================================
-   Player Gate — Themes
-   3 ثيمات: كحلي+ذهبي | أبيض+كحلي | كحلي+برتقالي
-   ===================================================== */
-
-/* ══════════════════════════════════════
-   ثيم 1: كحلي + ذهبي  (theme-green)
-══════════════════════════════════════ */
-body.theme-green {
-  --gold:         #facc15;
-  --gold-light:   #fde68a;
-  --gold-dark:    #ca8a04;
-  --gold-rgb:     250, 204, 21;
-  --black-rgb:    10, 22, 40;
-  --shadow-gold:  0 14px 35px rgba(var(--gold-rgb), 0.22);
-
-  --black:        #0a1628;
-  --black-2:      #0f1e3a;
-  --black-3:      #162040;
-
-  --white:        #e0f2fe;
-  --gray:         #93c5fd;
-  --gray-light:   #93c5fd;
-
-  --logo-filter: brightness(0) saturate(100%) invert(85%) sepia(60%) saturate(700%) hue-rotate(5deg) brightness(105%) contrast(95%);
-  --logo-filter-hover: brightness(0) saturate(100%) invert(95%) sepia(50%) saturate(500%) hue-rotate(5deg) brightness(110%);
-}
-
-/* ══════════════════════════════════════
-   ثيم 2: أبيض + كحلي  (theme-blue)
-══════════════════════════════════════ */
-body.theme-blue {
   --gold:         #0a1628;
   --gold-light:   #1d4ed8;
   --gold-dark:    #060e1c;
@@ -77,29 +23,9 @@ body.theme-blue {
 
   --logo-filter: brightness(0) saturate(100%) invert(10%) sepia(30%) saturate(800%) hue-rotate(200deg) brightness(90%) contrast(95%);
   --logo-filter-hover: brightness(0) saturate(100%) invert(20%) sepia(50%) saturate(600%) hue-rotate(200deg) brightness(95%);
-}
 
-/* ══════════════════════════════════════
-   ثيم 3: كحلي + برتقالي  (theme-red)
-══════════════════════════════════════ */
-body.theme-red {
-  --gold:         #f97316;
-  --gold-light:   #fb923c;
-  --gold-dark:    #ea580c;
-  --gold-rgb:     249, 115, 22;
-  --black-rgb:    6, 14, 28;
-  --shadow-gold:  0 14px 35px rgba(var(--gold-rgb), 0.22);
-
-  --black:        #060e1c;
-  --black-2:      #0a1628;
-  --black-3:      #0f1e3a;
-
-  --white:        #f1f5f9;
-  --gray:         #94a3b8;
-  --gray-light:   #94a3b8;
-
-  --logo-filter: brightness(0) saturate(100%) invert(55%) sepia(80%) saturate(700%) hue-rotate(5deg) brightness(100%) contrast(95%);
-  --logo-filter-hover: brightness(0) saturate(100%) invert(70%) sepia(60%) saturate(600%) hue-rotate(5deg) brightness(108%);
+  --transition:   all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius:       12px;
 }
 
 /* ══════════════════════════════════════
@@ -116,7 +42,7 @@ body.theme-red {
 }
 
 /* ══════════════════════════════════════
-   بوكسات — خلفية صحيحة لكل ثيم
+   بوكسات
 ══════════════════════════════════════ */
 .service-card,
 .about-card-main,
@@ -126,38 +52,37 @@ body.theme-red {
 }
 
 /* ══════════════════════════════════════
-   نصوص ثيم الأبيض على البوكسات البيضاء
+   نصوص على البوكسات البيضاء
 ══════════════════════════════════════ */
-body.theme-blue .service-title,
-body.theme-blue .why-title,
-body.theme-blue .vm-title,
-body.theme-blue .step-title,
-body.theme-blue .contact-info h3,
-body.theme-blue .cta-title {
+.service-title,
+.why-title,
+.vm-title,
+.step-title,
+.contact-info h3,
+.cta-title {
   color: #0a1628 !important;
 }
-body.theme-blue .service-desc,
-body.theme-blue .why-desc,
-body.theme-blue .vm-text,
-body.theme-blue .step-desc,
-body.theme-blue .about-desc,
-body.theme-blue .contact-info p,
-body.theme-blue .cta-desc {
+.service-desc,
+.why-desc,
+.vm-text,
+.step-desc,
+.about-desc,
+.contact-info p,
+.cta-desc {
   color: #64748b !important;
 }
-body.theme-blue .section-title {
+.section-title {
   color: #0a1628 !important;
 }
-body.theme-blue .section-subtitle,
-body.theme-blue .section-subtitle {
+.section-subtitle {
   color: #64748b !important;
 }
-body.theme-blue .stat-label {
+.stat-label {
   color: #64748b !important;
 }
 
 /* ══════════════════════════════════════
-   Hero — كلمة "للعالم" بلون مختلف
+   Hero — ألوان النص
 ══════════════════════════════════════ */
 .hero-title .white-text {
   color: var(--white) !important;
@@ -179,19 +104,6 @@ body.theme-blue .stat-label {
   color: var(--gold) !important;
 }
 
-/* ══════════════════════════════════════
-   أزرار الثيم في الناف بار — الألوان الصحيحة
-══════════════════════════════════════ */
-.theme-green-btn {
-  background: linear-gradient(135deg, #facc15, #fde68a) !important;
-}
-.theme-blue-btn {
-  background: linear-gradient(135deg, #f8faff, #e2e8f0) !important;
-  border: 2px solid #0a1628 !important;
-}
-.theme-red-btn {
-  background: linear-gradient(135deg, #f97316, #fb923c) !important;
-}
 html { scroll-behavior: smooth; }
 
 body {
@@ -361,41 +273,8 @@ section { padding: 96px 0; }
   gap: 16px;
 }
 
-.theme-switcher {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+/* theme-switcher مُحذوف بالكامل */
 
-.theme-btn {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  cursor: pointer;
-  transition: var(--transition);
-  padding: 0;
-  flex-shrink: 0;
-}
-
-.theme-btn:hover,
-.theme-btn.active {
-  transform: scale(1.12);
-  border-color: var(--white);
-  box-shadow: 0 0 0 3px rgba(var(--gold-rgb), 0.18);
-}
-
-.theme-green-btn {
-  background: linear-gradient(135deg, #22c55e, #4ade80);
-}
-
-.theme-blue-btn {
-  background: linear-gradient(135deg, #2563eb, #60a5fa);
-}
-
-.theme-red-btn {
-  background: linear-gradient(135deg, #ef4444, #f87171);
-}
 .lang-toggle {
   background: rgba(var(--gold-rgb), 0.12);
   border: 1px solid rgba(var(--gold-rgb), 0.3);
@@ -1238,7 +1117,7 @@ body.lang-en .toast { right: auto; left: 32px; }
 .toast-icon { color: var(--gold); font-size: 1.2rem; }
 
 /* ═══════════════════════════════
-   LOGO COLOR FILTER — Theme Aware
+   LOGO COLOR FILTER
 ═══════════════════════════════ */
 .footer-brand img {
   filter: var(--logo-filter);
@@ -1247,7 +1126,5 @@ body.lang-en .toast { right: auto; left: 32px; }
 .footer-brand img:hover {
   filter: var(--logo-filter-hover);
 }
-
-
 
 
