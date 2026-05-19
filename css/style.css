@@ -173,14 +173,15 @@ section { padding: 96px 0; }
   font-family: inherit;
 }
 .btn-gold {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: var(--black);
-  box-shadow: 0 6px 24px rgba(var(--gold-rgb), 0.35);
+  background: linear-gradient(135deg, #1e3a5f, #0a1628);
+  color: #ffffff;
+  box-shadow: 0 6px 24px rgba(10, 22, 40, 0.3);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 .btn-gold:hover {
+  background: linear-gradient(135deg, #0a1628, #1e3a5f);
   transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(var(--gold-rgb), 0.5);
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  box-shadow: 0 12px 36px rgba(10, 22, 40, 0.45);
 }
 .btn-outline {
   border-color: var(--gold);
